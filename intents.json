@@ -1,0 +1,505 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": ["hi", "hello", "xin chào", "chào shop", "alo", "có ai không", "chào buổi sáng", "chào buổi tối"],
+      "responses": [
+        "Chào mừng bạn đến với Foodie Deluxe! Tôi có thể giúp gì cho bữa ăn của bạn hôm nay?",
+        "Xin chào! Bạn muốn đặt bàn hay xem thực đơn của nhà hàng chúng tôi?",
+        "Foodie Deluxe xin chào! Chúc bạn một ngày ngon miệng. Bạn cần tư vấn món ăn nào không?"
+      ]
+    },
+    {
+      "tag": "bye",
+      "patterns": ["tạm biệt", "bye", "hẹn gặp lại", "thôi nhé", "cảm ơn tạm biệt", "xong rồi"],
+      "responses": [
+        "Cảm ơn bạn đã ghé thăm! Hẹn sớm gặp lại bạn tại nhà hàng.",
+        "Chúc bạn một bữa tối ngon miệng! Tạm biệt bạn.",
+        "Rất hân hạnh được phục vụ. Hẹn gặp lại bạn lần sau!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["cảm ơn", "thanks", "thank you", "cảm ơn nhé", "tốt quá"],
+      "responses": [
+        "Không có gì ạ! Đó là niềm vinh hạnh của chúng tôi.",
+        "Rất vui vì đã giúp được bạn. Chúc bạn ngon miệng!",
+        "Dạ, bạn cần hỗ trợ gì thêm cứ bảo tôi nhé."
+      ]
+    },
+    {
+      "tag": "menu_general",
+      "patterns": ["thực đơn", "menu", "có món gì", "cho xem menu", "danh sách món ăn", "nhà hàng bán gì"],
+      "responses": [
+        "Nhà hàng chúng tôi có thực đơn đa dạng từ món Á đến món Âu. Bạn muốn xem menu Khai vị, Món chính hay Đồ uống?",
+        "Dạ, menu của chúng tôi gồm có: Steak, Hải sản, Mì Ý và các món đặc sản vùng miền. Tôi gửi bạn link menu online nhé!"
+      ]
+    },
+    {
+      "tag": "recommendations",
+      "patterns": ["gợi ý món ăn", "nên ăn gì", "món nào ngon nhất", "best seller", "món đặc sắc", "tư vấn món ngon"],
+      "responses": [
+        "Món 'Signature' của chúng tôi là Thăn bò Mỹ nướng đá và Cá hồi sốt chanh leo. Bạn có muốn thử không?",
+        "Nếu bạn đi lần đầu, tôi gợi ý Combo Gia đình hoặc Mì Ý hải sản, rất được khách hàng ưa chuộng ạ."
+      ]
+    },
+    {
+      "tag": "breakfast",
+      "patterns": ["đồ ăn sáng", "ăn sáng có gì", "menu sáng", "bữa sáng"],
+      "responses": [
+        "Bữa sáng chúng tôi phục vụ từ 6h-10h với Phở bò truyền thống, Bánh mì bít tết và Cafe máy ạ."
+      ]
+    },
+    {
+      "tag": "lunch_combo",
+      "patterns": ["cơm trưa", "combo trưa", "ăn trưa", "văn phòng", "set lunch"],
+      "responses": [
+        "Chúng tôi có Set Lunch dành cho dân văn phòng giá chỉ từ 79k, thay đổi thực đơn theo ngày ạ."
+      ]
+    },
+    {
+      "tag": "dinner_romantic",
+      "patterns": ["ăn tối", "hẹn hò", "không gian lãng mạn", "buổi tối"],
+      "responses": [
+        "Cho một buổi tối lãng mạn, chúng tôi có khu vực nến và hoa kèm rượu vang đỏ cao cấp. Bạn muốn đặt bàn gần cửa sổ không?"
+      ]
+    },
+    {
+      "tag": "appetizers",
+      "patterns": ["món khai vị", "ăn nhẹ", "salad", "súp", "khai vị"],
+      "responses": [
+        "Khai vị bạn có thể thử Salad hoàng đế hoặc Súp kem bí đỏ, rất kích thích vị giác trước món chính ạ."
+      ]
+    },
+    {
+      "tag": "steak_info",
+      "patterns": ["bít tết", "steak", "thịt bò", "thăn bò", "bò mỹ"],
+      "responses": [
+        "Steak của chúng tôi dùng bò nhập khẩu 100%. Bạn muốn dùng độ chín Medium-rare (tái vừa) hay Medium (chín vừa)?"
+      ]
+    },
+    {
+      "tag": "seafood_info",
+      "patterns": ["hải sản", "tôm", "cua", "cá hồi", "mực", "đồ biển"],
+      "responses": [
+        "Hải sản tại nhà hàng luôn tươi sống trong ngày. Đặc biệt là Tôm hùm bỏ lò phô mai và Cá hồi áp chảo ạ."
+      ]
+    },
+    {
+      "tag": "pasta_pizza",
+      "patterns": ["mì ý", "pasta", "pizza", "đồ ý", "spaghetti"],
+      "responses": [
+        "Chúng tôi có Pizza đế mỏng nướng củi và Mì Ý sốt bò băm truyền thống, chuẩn vị Ý ạ."
+      ]
+    },
+    {
+      "tag": "vegetarian",
+      "patterns": ["món chay", "ăn chay", "đồ chay", "không ăn thịt", "vegetarian"],
+      "responses": [
+        "Nhà hàng có thực đơn chay riêng biệt với các món như Nấm kho tộ, Đậu phụ sốt Tứ Xuyên và Salad rau củ tươi."
+      ]
+    },
+    {
+      "tag": "drinks_alcohol",
+      "patterns": ["rượu vang", "bia", "cocktail", "đồ uống có cồn", "nhậu"],
+      "responses": [
+        "Chúng tôi có hầm rượu vang phong phú và các loại bia nhập khẩu. Bạn muốn dùng vang đỏ hay vang trắng?"
+      ]
+    },
+    {
+      "tag": "drinks_non_alcohol",
+      "patterns": ["nước ngọt", "nước ép", "sinh tố", "trà trái cây", "đồ uống nhẹ"],
+      "responses": [
+        "Nước ép cam tươi và Trà đào cam sả là hai món giải nhiệt tốt nhất hiện nay của chúng tôi."
+      ]
+    },
+    {
+      "tag": "desserts",
+      "patterns": ["món tráng miệng", "đồ ngọt", "bánh ngọt", "kem", "trái cây"],
+      "responses": [
+        "Tráng miệng hôm nay có Bánh Tiramisu mềm mịn và Kem dừa non. Bạn muốn dùng món nào?"
+      ]
+    },
+    {
+      "tag": "price_inquiry",
+      "patterns": ["giá cả", "đắt không", "bao nhiêu tiền", "bảng giá", "giá món ăn"],
+      "responses": [
+        "Món ăn của chúng tôi có giá dao động từ 50k đến 500k, phù hợp với nhiều nhu cầu từ bình dân đến cao cấp ạ."
+      ]
+    },
+    {
+      "tag": "cheap_options",
+      "patterns": ["món rẻ", "tiết kiệm", "sinh viên", "giá thấp", "dưới 100k"],
+      "responses": [
+        "Với ngân sách dưới 100k, bạn có thể chọn các món Mì Ý băm hoặc Cơm gà quay, rất đầy đặn ạ."
+      ]
+    },
+    {
+      "tag": "luxury_options",
+      "patterns": ["món đắt nhất", "món xịn", "cao cấp", "đồ sang"],
+      "responses": [
+        "Món cao cấp nhất là Bò Wagyu A5 nướng đá và Bào ngư sốt dầu hào, cực kỳ sang trọng cho các buổi tiệc."
+      ]
+    },
+    {
+      "tag": "reservation_booking",
+      "patterns": ["đặt bàn", "book bàn", "muốn đặt chỗ", "giữ chỗ", "tới ăn"],
+      "responses": [
+        "Dạ, bạn muốn đặt bàn cho mấy người và vào lúc mấy giờ ạ?",
+        "Tôi có thể giúp bạn giữ chỗ. Bạn vui lòng để lại tên và số điện thoại nhé."
+      ]
+    },
+    {
+      "tag": "reservation_group",
+      "patterns": ["đặt tiệc", "đi đông người", "liên hoan", "sinh nhật", "họp lớp", "đặt bàn 20 người"],
+      "responses": [
+        "Với đoàn đông người, chúng tôi có phòng VIP riêng tư và menu set tiệc ưu đãi. Bạn cần hỗ trợ trang trí không?"
+      ]
+    },
+    {
+      "tag": "reservation_cancel",
+      "patterns": ["hủy bàn", "không đến nữa", "hủy đặt chỗ", "cancel booking"],
+      "responses": [
+        "Dạ tôi đã ghi nhận hủy bàn cho bạn. Hy vọng được phục vụ bạn vào dịp khác gần nhất."
+      ]
+    },
+    {
+      "tag": "location_address",
+      "patterns": ["địa chỉ", "nhà hàng ở đâu", "đường đi", "vị trí", "chi nhánh"],
+      "responses": [
+        "Nhà hàng tọa lạc tại số 123 Đường ABC, Quận 1, TP.HCM. Bạn cần tôi gửi định vị qua Google Maps không?"
+      ]
+    },
+    {
+      "tag": "parking",
+      "patterns": ["chỗ để xe", "đỗ ô tô", "gửi xe ở đâu", "có chỗ đậu xe không"],
+      "responses": [
+        "Chúng tôi có bãi đỗ xe máy và ô tô miễn phí ngay trước cửa nhà hàng, có bảo vệ trông coi 24/24 ạ."
+      ]
+    },
+    {
+      "tag": "opening_hours",
+      "patterns": ["mấy giờ mở cửa", "giờ làm việc", "có mở cửa chủ nhật không", "đóng cửa lúc mấy giờ"],
+      "responses": [
+        "Nhà hàng mở cửa từ 8:00 đến 22:30 hàng ngày, kể cả ngày lễ và Chủ Nhật ạ."
+      ]
+    },
+    {
+      "tag": "delivery_order",
+      "patterns": ["giao hàng", "ship đồ ăn", "đặt mang về", "muốn mua về", "delivery"],
+      "responses": [
+        "Dạ, chúng tôi có giao hàng tận nơi. Bạn vui lòng chọn món và cung cấp địa chỉ để tôi báo phí ship nhé."
+      ]
+    },
+    {
+      "tag": "delivery_time",
+      "patterns": ["bao lâu thì có", "ship nhanh không", "thời gian giao hàng"],
+      "responses": [
+        "Thời gian giao hàng thường từ 20-40 phút tùy vào khoảng cách và tình hình giao thông ạ."
+      ]
+    },
+    {
+      "tag": "delivery_fee",
+      "patterns": ["phí ship bao nhiêu", "có freeship không", "phí vận chuyển"],
+      "responses": [
+        "Chúng tôi miễn phí ship trong bán kính 2km. Trên 2km phí ship là 5k/km ạ."
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": ["thanh toán thế nào", "có quẹt thẻ không", "chuyển khoản", "momo", "tiền mặt"],
+      "responses": [
+        "Chúng tôi chấp nhận: Tiền mặt, Thẻ ngân hàng (Visa/Master), Chuyển khoản và các ví điện tử MoMo, VNPAY."
+      ]
+    },
+    {
+      "tag": "discounts_promotions",
+      "patterns": ["khuyến mãi", "giảm giá", "voucher", "ưu đãi", "có sale không"],
+      "responses": [
+        "Hiện tại chúng tôi đang giảm 10% cho khách hàng đặt bàn trước qua chatbot này đấy ạ!"
+      ]
+    },
+    {
+      "tag": "membership",
+      "patterns": ["thẻ thành viên", "tích điểm", "khách hàng thân thiết", "làm thẻ"],
+      "responses": [
+        "Bạn chỉ cần để lại số điện thoại để tích điểm. Mỗi 100k sẽ được tích 1 điểm, dùng để giảm giá cho lần sau ạ."
+      ]
+    },
+    {
+      "tag": "wifi_info",
+      "patterns": ["pass wifi", "mật khẩu wifi", "có wifi không"],
+      "responses": [
+        "Dạ wifi nhà hàng là 'Foodie_Deluxe_Free', mật khẩu là '88888888' ạ."
+      ]
+    },
+    {
+      "tag": "kids_area",
+      "patterns": ["chỗ chơi cho trẻ em", "có ghế trẻ em không", "trẻ nhỏ"],
+      "responses": [
+        "Chúng tôi có sẵn ghế cao cho bé và một khu vui chơi nhỏ an toàn để các bé giải trí ạ."
+      ]
+    },
+    {
+      "tag": "smoking_area",
+      "patterns": ["chỗ hút thuốc", "được hút thuốc không", "khu vực ngoài trời"],
+      "responses": [
+        "Bên trong nhà hàng là khu vực không hút thuốc. Nếu cần, bạn có thể ngồi ở khu vực sân vườn ngoài trời ạ."
+      ]
+    },
+    {
+      "tag": "allergies",
+      "patterns": ["dị ứng", "không ăn được hành", "dị ứng hải sản", "kiêng đồ cay"],
+      "responses": [
+        "Dạ bạn yên tâm, hãy ghi chú lại yêu cầu khi đặt món, đầu bếp của chúng tôi sẽ điều chỉnh riêng cho bạn."
+      ]
+    },
+    {
+      "tag": "food_quality_good",
+      "patterns": ["ngon quá", "đồ ăn tuyệt vời", "rất hài lòng", "khen đầu bếp"],
+      "responses": [
+        "Cảm ơn bạn rất nhiều! Lời khen của bạn là động lực lớn cho đội ngũ nhà hàng ạ."
+      ]
+    },
+    {
+      "tag": "food_quality_bad",
+      "patterns": ["đồ ăn nguội", "không ngon", "mặn quá", "dở quá", "thất vọng"],
+      "responses": [
+        "Rất xin lỗi bạn về trải nghiệm không tốt này. Tôi sẽ báo ngay với bếp để kiểm tra và đổi món mới cho bạn ạ."
+      ]
+    },
+    {
+      "tag": "service_complaint",
+      "patterns": ["nhân viên thái độ", "phục vụ chậm", "chờ lâu quá", "gọi món mãi không thấy"],
+      "responses": [
+        "Thành thật xin lỗi bạn. Do hôm nay nhà hàng hơi đông, mong bạn thông cảm. Tôi sẽ thúc giục nhân viên ngay ạ."
+      ]
+    },
+    {
+      "tag": "birthday_service",
+      "patterns": ["tổ chức sinh nhật", "có bánh kem không", "tặng hoa", "hát mừng sinh nhật"],
+      "responses": [
+        "Chúng tôi có tặng gói trang trí cơ bản và bánh kem nhỏ cho khách đặt tiệc sinh nhật. Bạn muốn đặt vào ngày nào?"
+      ]
+    },
+    {
+      "tag": "spicy_level",
+      "patterns": ["có cay không", "muốn ăn cay", "giảm cay", "siêu cay"],
+      "responses": [
+        "Các món như Mì Tứ Xuyên có thể điều chỉnh độ cay từ cấp 1 đến cấp 5. Bạn chọn mức nào ạ?"
+      ]
+    },
+    {
+      "tag": "takeaway_packaging",
+      "patterns": ["hộp mang về", "đóng gói", "có bị đổ không", "túi giấy"],
+      "responses": [
+        "Chúng tôi dùng hộp giấy thân thiện môi trường và đóng gói rất kỹ, đảm bảo đồ ăn vẫn nóng hổi khi đến tay bạn."
+      ]
+    },
+    {
+      "tag": "ingredient_source",
+      "patterns": ["nguồn gốc thực phẩm", "thịt sạch không", "rau hữu cơ", "đồ tươi không"],
+      "responses": [
+        "Thực phẩm của chúng tôi được nhập từ các nông trại đạt chuẩn VietGAP và thịt bò nhập khẩu chính ngạch ạ."
+      ]
+    },
+    {
+      "tag": "seasonal_dishes",
+      "patterns": ["món theo mùa", "mùa hè ăn gì", "mùa đông có gì", "đặc sản mùa này"],
+      "responses": [
+        "Mùa hè này chúng tôi có món Gỏi sứa lạnh và Chè sen long nhãn rất thanh mát, mời bạn thử ạ."
+      ]
+    },
+    {
+      "tag": "cooking_time",
+      "patterns": ["nấu mất bao lâu", "đợi lâu không", "thời gian chuẩn bị"],
+      "responses": [
+        "Thông thường món ăn sẽ được phục vụ sau 10-15 phút kể từ khi bạn gọi món ạ."
+      ]
+    },
+    {
+      "tag": "cleanliness",
+      "patterns": ["nhà vệ sinh ở đâu", "sạch sẽ không", "vệ sinh an toàn thực phẩm"],
+      "responses": [
+        "Nhà hàng luôn đặt tiêu chí vệ sinh lên hàng đầu. Nhà vệ sinh nằm ở cuối hành lang bên trái, luôn được dọn dẹp sạch sẽ ạ."
+      ]
+    },
+    {
+      "tag": "music_request",
+      "patterns": ["nhạc to quá", "đổi nhạc", "nhạc không hay", "tắt nhạc"],
+      "responses": [
+        "Dạ tôi sẽ điều chỉnh âm lượng nhỏ lại hoặc đổi sang nhạc không lời nhẹ nhàng hơn cho bạn ạ."
+      ]
+    },
+    {
+      "tag": "air_conditioner",
+      "patterns": ["nóng quá", "lạnh quá", "điều hòa", "tăng nhiệt độ"],
+      "responses": [
+        "Dạ tôi sẽ báo nhân viên điều chỉnh nhiệt độ máy lạnh ngay để bạn cảm thấy thoải mái nhất."
+      ]
+    },
+    {
+      "tag": "refund_request",
+      "patterns": ["muốn trả tiền lại", "đòi tiền", "hoàn phí"],
+      "responses": [
+        "Nếu có sai sót từ phía nhà hàng, chúng tôi cam kết hoàn tiền hoặc tặng voucher bù đắp. Bạn vui lòng cho biết lý do cụ thể ạ."
+      ]
+    },
+    {
+      "tag": "feedback_general",
+      "patterns": ["góp ý", "đánh giá", "review", "ý kiến khách hàng"],
+      "responses": [
+        "Mọi góp ý của bạn đều giúp chúng tôi hoàn thiện hơn. Bạn có thể viết vào sổ góp ý hoặc đánh giá trên Fanpage ạ."
+      ]
+    },
+    {
+      "tag": "human_agent",
+      "patterns": ["gặp quản lý", "nói chuyện với người thật", "nhân viên đâu", "tổng đài viên"],
+      "responses": [
+        "Dạ, tôi sẽ kết nối bạn với nhân viên hỗ trợ ngay lập tức. Vui lòng chờ trong giây giây lát!"
+      ]
+    },
+  {
+    "tag": "menu_soup_pumpkin",
+    "patterns": ["súp bí đỏ", "soup bí đỏ", "bí đỏ kem", "súp kem bí"],
+    "responses": ["Súp bí đỏ của chúng tôi được nấu từ bí đỏ hữu cơ và kem tươi Pháp, rất sánh mịn và thơm ngậy ạ."]
+  },
+  {
+    "tag": "menu_soup_mushroom",
+    "patterns": ["súp nấm", "soup nấm", "nấm kem", "súp nấm linh chi"],
+    "responses": ["Súp nấm rừng với hương thơm đặc trưng từ nấm linh chi và nấm hương tươi, món khai vị nhẹ nhàng cho bạn."]
+  },
+  {
+    "tag": "menu_salad_caesar",
+    "patterns": ["salad caesar", "salad hoàng đế", "xà lách caesar"],
+    "responses": ["Salad Caesar gồm xà lách Roman, bánh mì nướng, phô mai Parmesan và sốt đặc chế của đầu bếp ạ."]
+  },
+  {
+    "tag": "menu_steak_ribeye",
+    "patterns": ["steak thăn lưng", "ribeye steak", "thăn lưng bò", "bò ribeye"],
+    "responses": ["Ribeye là phần thịt có vân mỡ đều, giúp miếng steak mềm mọng và đậm đà nhất. Bạn muốn dùng mức chín nào?"]
+  },
+  {
+    "tag": "menu_steak_tenderloin",
+    "patterns": ["thăn nội", "tenderloin", "bò phi lê", "steak mềm nhất"],
+    "responses": ["Tenderloin là phần thịt mềm nhất của con bò, gần như không có mỡ, rất phù hợp cho người thích sự tinh tế."]
+  },
+  {
+    "tag": "menu_salmon_panseared",
+    "patterns": ["cá hồi áp chảo", "cá hồi sốt chanh", "salmon steak"],
+    "responses": ["Cá hồi Na Uy áp chảo da giòn, bên trong vẫn giữ được độ ẩm, dùng kèm sốt chanh leo chua ngọt ạ."]
+  },
+  {
+    "tag": "menu_pasta_carbonara",
+    "patterns": ["mì ý kem", "pasta carbonara", "mì ý sốt kem nấm", "mì ý thịt xông khói"],
+    "responses": ["Mì Ý Carbonara với sốt kem trứng béo ngậy, thịt xông khói giòn tan và phô mai Parmesan bào vụn."]
+  },
+  {
+    "tag": "menu_pizza_seafood",
+    "patterns": ["pizza hải sản", "pizza tôm mực", "seafood pizza"],
+    "responses": ["Pizza hải sản gồm tôm, mực, thanh cua và phô mai Mozzarella kéo sợi, nướng củi thơm lừng."]
+  },
+  {
+    "tag": "menu_pizza_cheese",
+    "patterns": ["pizza phô mai", "pizza 4 loại phô mai", "cheese pizza"],
+    "responses": ["Pizza 4 loại phô mai (Quattro Formaggi) dành cho tín đồ yêu thích vị béo ngậy đặc trưng của phô mai Ý."]
+  },
+  {
+    "tag": "drink_mojito",
+    "patterns": ["mojito", "nước chanh bạc hà", "mojito truyền thống"],
+    "responses": ["Mojito bạc hà mát lạnh với vị chanh tươi và lá bạc hà nghiền, thức uống giải nhiệt hoàn hảo."]
+  },
+  {
+    "tag": "drink_red_wine",
+    "patterns": ["vang đỏ", "rượu vang đỏ", "red wine", "cabernet sauvignon"],
+    "responses": ["Chúng tôi có các dòng vang đỏ từ Pháp, Ý, Chile. Vang đỏ rất hợp khi dùng kèm với các món Steak bò ạ."]
+  },
+  {
+    "tag": "drink_white_wine",
+    "patterns": ["vang trắng", "rượu vang trắng", "white wine", "sauvignon blanc"],
+    "responses": ["Vang trắng ướp lạnh sẽ làm tăng hương vị cho các món hải sản và salad của bạn."]
+  },
+  {
+    "tag": "request_no_onion",
+    "patterns": ["không ăn hành", "đừng cho hành", "bỏ hành", "không hành tây"],
+    "responses": ["Dạ tôi đã ghi nhận yêu cầu không cho hành vào món ăn của bạn. Bạn yên tâm nhé!"]
+  },
+  {
+    "tag": "request_no_msg",
+    "patterns": ["không mì chính", "không bột ngọt", "đừng cho mì chính"],
+    "responses": ["Nhà hàng chúng tôi hạn chế dùng bột ngọt, nếu bạn yêu cầu, đầu bếp sẽ hoàn toàn không sử dụng ạ."]
+  },
+  {
+    "tag": "request_less_salt",
+    "patterns": ["ăn nhạt", "ít muối", "đừng làm mặn", "giảm mặn"],
+    "responses": ["Dạ, tôi sẽ báo bếp điều chỉnh vị nhạt hơn để phù hợp với khẩu vị của bạn."]
+  },
+  {
+    "tag": "request_extra_sauce",
+    "patterns": ["thêm sốt", "nhiều sốt", "cho thêm nước chấm", "extra sauce"],
+    "responses": ["Dạ được ạ, bạn muốn thêm loại sốt nào? Tôi sẽ mang ra ngay cho bạn."]
+  },
+  {
+    "tag": "complaint_hair",
+    "patterns": ["có tóc trong đồ ăn", "vấn đề vệ sinh", "đồ ăn bẩn", "có vật lạ"],
+    "responses": ["Thành thật xin lỗi bạn! Đây là sai sót nghiêm trọng. Tôi sẽ đổi món mới ngay lập tức và giảm giá hóa đơn cho bạn ạ."]
+  },
+  {
+    "tag": "complaint_wrong_order",
+    "patterns": ["nhầm món", "không phải món tôi gọi", "sai đồ ăn", "nhầm bàn"],
+    "responses": ["Rất xin lỗi bạn, có lẽ nhân viên đã nhầm lẫn. Tôi sẽ đổi lại đúng món bạn đã gọi ngay bây giờ."]
+  },
+  {
+    "tag": "complaint_cold_food",
+    "patterns": ["đồ ăn nguội", "không nóng", "nguội ngắt", "lạnh quá"],
+    "responses": ["Xin lỗi bạn, tôi sẽ mang vào bếp hâm nóng lại hoặc làm mới ngay để đảm bảo hương vị tốt nhất."]
+  },
+  {
+    "tag": "ask_vat_invoice",
+    "patterns": ["xuất hóa đơn đỏ", "hóa đơn vat", "lấy hóa đơn công ty", "invoice"],
+    "responses": ["Dạ có ạ, bạn vui lòng gửi thông tin công ty (Mã số thuế, địa chỉ) cho nhân viên thu ngân để xuất hóa đơn nhé."]
+  },
+  {
+    "tag": "ask_baby_chair",
+    "patterns": ["ghế trẻ em", "ghế cho bé", "có chỗ cho trẻ nhỏ không"],
+    "responses": ["Nhà hàng có sẵn ghế cao cho bé, bạn cần mấy chiếc để tôi sắp xếp tại bàn ạ?"]
+  },
+  {
+    "tag": "ask_private_room",
+    "patterns": ["phòng riêng", "phòng vip", "không gian riêng tư", "phòng kín"],
+    "responses": ["Chúng tôi có các phòng VIP sức chứa từ 6-20 người. Bạn có muốn đặt phòng riêng không? (Có phụ phí nhỏ ạ)"]
+  },
+  {
+    "tag": "ask_parking_truck",
+    "patterns": ["đỗ xe tải", "chỗ đậu xe lớn", "xe 16 chỗ", "xe khách"],
+    "responses": ["Bãi xe của chúng tôi khá rộng, có thể hỗ trợ xe 16 chỗ. Với xe lớn hơn, tôi sẽ hướng dẫn bạn đỗ ở bãi gần nhà hàng ạ."]
+  },
+  {
+    "tag": "ask_wheelchair",
+    "patterns": ["xe lăn", "lối đi xe lăn", "người khuyết tật"],
+    "responses": ["Nhà hàng có lối đi phẳng và nhân viên hỗ trợ xe lăn. Bạn hoàn toàn yên tâm khi đến dùng bữa ạ."]
+  },
+  {
+    "tag": "ask_corkage_fee",
+    "patterns": ["mang rượu ngoài", "phí mang rượu", "phí phục vụ rượu", "tự mang đồ uống"],
+    "responses": ["Nhà hàng có thu phí phục vụ rượu mang ngoài (Corkage fee). Phí tùy thuộc vào loại rượu bạn mang theo ạ."]
+  },
+  {
+    "tag": "event_anniversary",
+    "patterns": ["kỷ niệm ngày cưới", "kỷ niệm yêu nhau", "anniversary"],
+    "responses": ["Chúc mừng ngày kỷ niệm của bạn! Chúng tôi sẽ chuẩn bị một góc bàn thật lãng mạn với nến và hoa cho bạn."]
+  },
+  {
+    "tag": "event_proposal",
+    "patterns": ["cầu hôn", "tổ chức cầu hôn", "lễ cầu hôn"],
+    "responses": ["Thật tuyệt vời! Chúng tôi rất vinh dự được hỗ trợ bạn chuẩn bị cho khoảnh khắc quan trọng này. Hãy liên hệ quản lý để lên kế hoạch nhé."]
+  },
+  {
+    "tag": "ask_takeaway_box",
+    "patterns": ["hộp đựng đồ thừa", "mang đồ thừa về", "gói đồ ăn", "hộp mang về"],
+    "responses": ["Dạ được ạ, nhân viên sẽ giúp bạn đóng gói đồ ăn thừa vào hộp sạch sẽ để bạn mang về nhé."]
+  }
+
+
+  ]
+}
