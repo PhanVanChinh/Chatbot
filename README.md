@@ -3,11 +3,9 @@
 ## Cài đặt & Chạy
 
 ```bash
-# Yêu cầu: Python 3.10+, numpy (không cần cài thêm gì)
-pip install numpy
-
+# Yêu cầu: Python 3.10+, numpy 
 # Chạy chatbot
-python chatbot.py
+python3 chatbot.py
 ```
 
 ## Cách dùng
@@ -26,7 +24,6 @@ python chatbot.py
 | Threshold cứng 0.5 | Adaptive: HIGH(0.55)/MEDIUM(0.30)/fallback |
 | Không nhớ ngữ cảnh | Context queue (3 intent gần nhất) |
 | Gợi ý khi không hiểu | Top-3 suggestions có nhãn tiếng Việt |
-| Tag typo (" bye","iphonee") | Đã sửa toàn bộ intents.json |
 | Intent overlap | Jaccard specificity tie-breaking |
 
-## Kết quả test: 20/20 (100%)
+
